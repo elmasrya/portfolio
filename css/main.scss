@@ -29,6 +29,13 @@ $on-laptop:        800px;
 
 
 
+.logo{
+  height:100px
+  width:100px;
+  display:inline;
+  float:left;
+}
+
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {

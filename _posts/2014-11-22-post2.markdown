@@ -1,0 +1,10 @@
+--
+layout: post
+title:  "HTML 5"
+date:   2014-11-22 17:02:06
+categories: jekyll update
+---
+
+So there is nothing that HTML 5 can't do. It seems that there is so much animation cross-over between the mighty three internet components: HTML 5, CSS3, and JS. Checkout this galaxy game that is done ONLY IN HTML 5: http://www.html5gamedevelopment.com/html5-game-tutorials/2013-06-5-part-html5-game-tutorial-galaxian-shooter
+
+NO CSS NO JS...woah! The tutorial is incredible and I'm actually following through with it. I am going to attempt (do i dare?) to make my own video game using colling testing and response. I'm curious to see how far HTML 5 can take me. If I am successful, I will post my link on github! Wish me luck

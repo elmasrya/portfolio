@@ -2,7 +2,6 @@
 layout: post
 title:  "My Journey Begins"
 date:   2014-11-17 17:02:06
-categories: jekyll update
 ---
 
 So couple months ago, I began learning at a coding bootcamp known as the The Iron Yard. I have to say it has been

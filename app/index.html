@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>portfolio</title>
+    <title>Andrew El-Masry</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -34,6 +35,15 @@
 
     </div><!--end of container-->
 
+    <script type="text/template" id="homeTemp">
+      <h2>Home Temp</h2>
+    </script>
+
+    <script type="text/template" id="aboutTemp">
+      <h2>About Temp</h2>
+    </script>
+
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -42,7 +52,19 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <script type="text/javascript">
+    window.App = {};
+    App.Models = {};
+    App.Collections = {};
+    App.Views = {};
+    App.Routers={};
+    </script>
+
+
         <!-- build:js scripts/main.js -->
+        <script src="scripts/about.js"></script>
+        <script src="scripts/home.js"></script>
+        <script src="scripts/router.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

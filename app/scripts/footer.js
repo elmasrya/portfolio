@@ -1,11 +1,11 @@
 (function(){
 
-  App.Views.Nav = Backbone.View.extend({
+  App.Views.Footer = Backbone.View.extend({
 
-    el                : '#top',
+    el                : '#bottom',
 
 
-    template        : _.template($('#navTemp').html()),
+    template        : _.template($('#footerTemp').html()),
 
     events: {
 

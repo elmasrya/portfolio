@@ -6,7 +6,7 @@
 
     initialize: function () {
       Backbone.history.start();
-
+      
     },
 
     routes: {

@@ -36,10 +36,12 @@
     </div><!--end of container-->
 
     <script type="text/template" id="navTemp">
+    <div onclick="window.location.href='somewhere...';">...</div>
+
       <img title="Andrew El-Masry" class="navImg"src="images/andrew.png">
-      <div class="navBox"><h2>About</h2></div>
-      <div class="navBox"><h2>Projects</h2></div>
-      <div class="navBox"><h2>Contact</h2></div>
+      <div onclick="window.location.href='#/';" class="navBox"><h2>About</h2></div>
+      <div onclick="window.location.href='#/projects';" class="navBox"><h2>Projects</h2></div>
+      <div onclick="window.location.href='#/contact';" class="navBox"><h2>Contact</h2></div>
     </script>
 
     <script type="text/template" id="homeTemp">
@@ -73,12 +75,38 @@
 
     </script>
 
-    <script type="text/template" id="aboutTemp">
-      <h2>About Temp</h2>
+    <script type="text/template" id="contactTemp">
+      <div>
+        <h4>Send Me A Message Right Here</h4>
+        <form action="mailto:andrewelmasry@gmail.com" method="post">
+          <label>Your Name:</label>
+          <input type="text" class="nameVal" placeholder="Your Name">
+          <label>Email: </label>
+          <input type="text" class="emailVal" placeholder="Your E-mail">
+          <label>Subject:</label>
+          <input type="text" class="subVal" placeholder="Subject">
+          <label>Your Message:</label>
+          <textarea class="messVal" type="text" placeholder="Your Message Here"></textarea>
+          <button class="submit">Submit</button> <button class="clear">Clear</button>
+        </form>
+      </div>
+    </script>
+
+    <script type="text/template" id="projectsTemp">
+      <h2>Projects Temp</h2>
     </script>
 
     <script type="text/template" id="footerTemp">
-    <div class="footer"><h2>Footer</h2></div>
+      <div class="footer">You can also find me here:</div>
+      <div class="ftFrame"><a href= "https://plus.google.com/103677934450919339935/posts" title = "Link to google+"><img class="ftImg" src="images/google+.png"></a></div>
+      <div class="ftFrame"><a href= "https://github.com/elmasrya" title = "Link to my github page"><img class="ftImg" src="images/github.png"></a></div>
+      <div class="ftFrame"><a href= "https://www.linkedin.com/profile/view?id=177789539&trk=spm_pic" title = "This is my Linkedin"><img class="ftImg" src="images/linkedin.png"></a></div>
+      <div class="ftFrame"><a href= "http://www.meetup.com/members/176761532" title = "meetup"><img class="ftImg" src="images/meetup.png"></a></div>
+      <div class="ftFrame"><a href= "http://codepen.io/aelmary/" title = "Link to my codepen"><img class="ftImg" src="images/codepen.png"></a></div>
+      <div class="ftFrame"><a href= "http://stackoverflow.com/users/4339993/andrew-el-masry" title = "Link to stackoverflow"><img class="ftImg" src="images/stackoverflow.png"></a></div>
+      <div class="ftFrame"><a href= "https://twitter.com/ael_masry" title = "Link to my twitter"><img class="ftImg" src="images/twitter.png"></a></div>
+      <div class="ftFrame"><a href= "https://www.youtube.com/channel/UCMd00CVDcwdG-IWPnESwctw" title = "Link to my youtube channel"><img class="ftImg" src="images/youtube.png"></a></div>
+      <div class="ftFrame"><a href= "https://www.facebook.com/andrew.elmasry.73" title = "Link to my facebook profile"><img class="ftImg" src="images/facebook.png"></a></div>
     </script>
 
 
@@ -100,7 +128,8 @@
 
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/about.js"></script>
+        <script src="scripts/projects.js"></script>
+        <script src="scripts/contact.js"></script>
         <script src="scripts/home.js"></script>
         <script src="scripts/footer.js"></script>
         <script src="scripts/nav.js"></script>

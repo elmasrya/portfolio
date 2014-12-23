@@ -11,17 +11,23 @@
 
     routes: {
       ''                  : 'home',
-      'about'             : 'about',
+      'projects'          : 'projects',
+      'contact'           : 'contact'
+
     },
 
     home: function () {
       new App.Views.Home();
     },
 
-    about: function () {
-      new App.Views.About();
-    }
 
+    projects: function () {
+      new App.Views.Projects();
+    },
+
+    contact: function () {
+      new App.Views.Contact();
+    }
 
 
   });

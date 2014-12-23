@@ -1,11 +1,11 @@
 (function(){
 
-  App.Views.About = Backbone.View.extend({
+  App.Views.Projects = Backbone.View.extend({
 
     el                : '#middle',
 
 
-    template        : _.template($('#aboutTemp').html()),
+    template        : _.template($('#projectsTemp').html()),
 
     events: {
 

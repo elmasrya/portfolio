@@ -1,9 +1,0 @@
----
-layout: post
-title:  "My Journey Begins"
-date:   2014-11-17 17:02:06
----
-
-So couple months ago, I began learning at a coding bootcamp known as the The Iron Yard. I have to say it has been
-one of the best choices of my life. I have never learned so many skills in such little time.
-HTML 5, CSS 3, and the infamous JavaScript. There is so much that I have to discuss and document on this aweosome journey. My next post will take you all the way to the beginning.

@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "andrewelmasry"
+        }, 
+        "andrewelmasry": {
+            "applicationId": "2fJtmGo25VhG6f8veV632mmw2tYDFXaHeL3QQZ5x", 
+            "masterKey": "nbf8IsgvoRYYQPjZmHV9tEVYNdxiIMjhxtTxPRUe"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.2"
+    }
+}

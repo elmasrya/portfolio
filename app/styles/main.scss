@@ -94,7 +94,7 @@ body {
   .contactForm{
     @include span-columns(5);
     @include shift(1);
-    .label{
+    label{
       display:block;
       margin-bottom:7.5px;
     }

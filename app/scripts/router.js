@@ -1,12 +1,11 @@
 (function () {
 
 
-  App.Routers.AppRouter = Backbone.Router.extend({
+  App.Routers.AppRouter = Parse.Router.extend({
 
 
     initialize: function () {
-      Backbone.history.start();
-      
+
     },
 
     routes: {
@@ -26,6 +25,7 @@
     },
 
     contact: function () {
+      $('.messSent').css("display","none");
       new App.Views.Contact();
     }
 

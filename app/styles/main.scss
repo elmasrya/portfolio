@@ -61,6 +61,9 @@ body {
 #middle{
   @include outer-container;
   border:solid;
+
+  /*.......home styling.......*/
+
   .home{
     @include span-columns(12);
     border:solid;
@@ -87,9 +90,31 @@ body {
     }
   }
 
+  /*.......contact styling.......*/
+  .contactForm{
+    @include span-columns(5);
+    @include shift(1);
+    .label{
+      display:block;
+      margin-bottom:7.5px;
+    }
+    input{
+      padding:5px;
+      margin-bottom:20px;
+    }
+    textarea{
+      width:300px;
+      height:300px;
+      padding:5px;
+      margin-bottom:20px;
+    }
+    .messSent{
+      display:none;
+    }
+  }
 
 
-}
+}/*.......end of middle div.......*/
 
 #bottom{
   @include outer-container;

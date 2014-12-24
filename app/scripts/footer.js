@@ -1,6 +1,6 @@
 (function(){
 
-  App.Views.Footer = Backbone.View.extend({
+  App.Views.Footer = Parse.View.extend({
 
     el                : '#bottom',
 

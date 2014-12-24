@@ -1,6 +1,6 @@
 (function(){
 
-  App.Views.Projects = Backbone.View.extend({
+  App.Views.Projects = Parse.View.extend({
 
     el                : '#middle',
 

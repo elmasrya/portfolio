@@ -1,0 +1,189 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+
+// #container{
+//   line-height: 30px;
+//   background-color: $white;
+//   padding: 10px;
+//   border-radius: 4px;
+//   border: 1px solid $grey;
+//   height: auto;
+//   overflow: scroll;
+//   -webkit-overflow-scrolling: touch;
+//   position: absolute;
+//   top: 116px; bottom: 102px; right: 20px; left: 20px;
+//
+//   @media ( max-width: 600px){
+//     bottom: 146px;
+//   }
+//
+//   @media ( max-width: 400px){
+//     bottom: 126px;
+//   }
+//
+//
+// }
+
+#top{
+  @include outer-container;
+
+  border:solid;
+
+  .navImg{
+    @include span-columns(12);
+  }
+
+  .navBox{
+    @include span-columns(4);
+    border:solid;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+  }
+
+  .navBox:hover{
+    cursor: hand;
+    cursor: pointer;
+    background-color:black;
+    border-color:black;
+    color:white;
+  }
+
+}
+
+#middle{
+  @include outer-container;
+  border:solid;
+
+  /*.......home styling.......*/
+
+  .home{
+    @include span-columns(12);
+    border:solid;
+    text-align:center;
+  }
+
+  .tagline{
+    @include span-columns(6);
+    @include shift(3);
+    border:solid;
+    text-align:center;
+  }
+
+  .aboutMe{
+    // border:solid;
+    @include span-columns(4);
+    @include shift(1);
+    padding-top:20px;
+    .para{
+      line-height: 1.5;
+      text-indent: 2em;
+      text-align:justify;
+      margin:0;
+    }
+  }
+
+  /*.......contact styling.......*/
+  .contactForm{
+    @include span-columns(5);
+    @include shift(1);
+    label{
+      display:block;
+      margin-bottom:7.5px;
+    }
+    input{
+      padding:5px;
+      margin-bottom:20px;
+    }
+    textarea{
+      width:300px;
+      height:300px;
+      padding:5px;
+      margin-bottom:20px;
+    }
+    .messSent{
+      display:none;
+    }
+  }
+
+
+}/*.......end of middle div.......*/
+
+#bottom{
+  @include outer-container;
+  background-color:gray;
+
+
+  .footer{
+    @include span-columns(12);
+    text-align:center;
+  }
+
+  .ftFrame{
+    @include span-columns(4);
+    @include omega();
+    text-align:center;
+  }
+
+  .ftImg{
+    margin-bottom:30px;
+    height:100px;
+    width:100px;
+    opacity: 0.8;
+    border-radius:10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
+    color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+  }
+
+  .ftImg:hover{
+    cursor: hand;
+    cursor: pointer;
+    opacity: 1; /*Reflection*/
+    -webkit-box-reflect:
+    below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+    /*Glow*/ -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  }
+
+}/*end of bottom*/
+
+
+
+
+
+// #ex5 {
+//   width: 700px;
+//   margin: 0 auto;
+//   min-height: 300px;
+//   }
+//
+// #ex5 img {
+//   margin: 25px;
+//   opacity: 0.8;
+//   border: 10px solid #eee; /*Transition*/
+//   -webkit-transition: all 0.5s ease;
+//   -moz-transition: all 0.5s ease;
+//   -o-transition: all 0.5s ease; /*Reflection*/
+//   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
+//   color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+//   }
+//
+//   #ex5 img:hover {
+//     opacity: 1; /*Reflection*/
+//     -webkit-box-reflect:
+//     below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+//     /*Glow*/ -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+//     -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+//     box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+//     }

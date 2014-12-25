@@ -1,3 +1,192 @@
+(function(){
+
+  App.Views.Surf = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#surfTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
+(function(){
+
+  App.Views.Spiked = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#spikedTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
+(function(){
+
+  App.Views.Blog = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#blogTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
+(function(){
+
+  App.Views.Wilma = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#wilmaTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
+(function(){
+
+  App.Views.Bricks = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#bricksTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
+(function(){
+
+  App.Views.Game = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#gameTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
+(function(){
+
+  App.Views.Book = Parse.View.extend({
+
+    el                : '#middle',
+
+
+    template        : _.template($('#bookTemp').html()),
+
+    events: {
+
+    },
+
+    initialize   : function () {
+      this.render();
+
+    },
+
+    render  : function () {
+      this.$el.html(this.template);
+
+    }
+
+  });
+
+}());
+
 (function() {
 
   App.Models.Message = Parse.Object.extend({
@@ -158,7 +347,13 @@
     template        : _.template($('#projectsTemp').html()),
 
     events: {
-
+      'click .book'   : 'gobook',
+      'click .game'   : 'gogame',
+      'click .bricks' : 'gobricks',
+      'click .wilma'  : 'gowilma',
+      'click .blog'   : 'goblog',
+      'click .spiked' : 'gospiked',
+      'click .surf'   : 'gosurf',
     },
 
     initialize   : function () {
@@ -169,7 +364,43 @@
     render  : function () {
       this.$el.html(this.template);
 
+    },
+
+    gobook: function () {
+      App.router.navigate('#/book', {trigger: true});
+      new App.Views.Book();
+    },
+
+    gogame: function () {
+      App.router.navigate('#/game', {trigger: true});
+      new App.Views.Game();
+    },
+
+    gobricks: function () {
+      App.router.navigate('#/bricks', {trigger: true});
+      new App.Views.Bricks();
+    },
+
+    gowilma: function () {
+      App.router.navigate('#/wilma', {trigger: true});
+      new App.Views.Wilma();
+    },
+
+    goblog: function () {
+      App.router.navigate('#/blog', {trigger: true});
+      new App.Views.Blog();
+    },
+
+    gospiked: function () {
+      App.router.navigate('#/spiked', {trigger: true});
+      new App.Views.Spiked();
+    },
+
+    gosurf: function () {
+      App.router.navigate('#/surf', {trigger: true});
+      new App.Views.Surf();
     }
+
 
   });
 
@@ -287,7 +518,14 @@
     routes: {
       ''                  : 'home',
       'projects'          : 'projects',
-      'contact'           : 'contact'
+      'contact'           : 'contact',
+      'book'              : 'book',
+      'game'              : 'game',
+      'bricks'            : 'bricks',
+      'wilma'             : 'wilma',
+      'blog'              : 'blog',
+      'spiked'            : 'spiked',
+      'surf'              : 'surf'
 
     },
 
@@ -303,7 +541,37 @@
     contact: function () {
       $('.messSent').css("display","none");
       new App.Views.Contact();
+    },
+
+    book: function () {
+      new App.Views.Book();
+    },
+
+    game: function () {
+      new App.Views.Game();
+    },
+
+    bricks: function () {
+      new App.Views.Bricks();
+    },
+
+    wilma: function () {
+      new App.Views.Wilma();
+    },
+
+    blog: function () {
+      new App.Views.Blog();
+    },
+
+    spiked: function () {
+      new App.Views.Spiked();
+    },
+
+    surf: function () {
+      new App.Views.Surf();
     }
+
+
 
 
   });

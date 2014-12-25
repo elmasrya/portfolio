@@ -28,23 +28,23 @@
     </div><!--end of container-->
 
     <script type="text/template" id="navTemp">
-      <img title="Andrew El-Masry" class="navImg"src="images/andrew.png">
-      <div class="navBox home"><h2>About</h2></div>
-      <div class="navBox projects"><h2>Projects</h2></div>
-      <div class="navBox contact"><h2>Contact</h2></div>
+      <div class="navView">
+        <img title="Andrew El-Masry" class="navImg"src="images/andrew.png">
+        <div class="navBox home"><h2>About</h2></div>
+        <div class="navBox projects"><h2>Projects</h2></div>
+        <div class="navBox contact"><h2>Contact</h2></div>
+      </div>
     </script>
 
     <script type="text/template" id="homeTemp">
-
+      <div class="homeView">
         <div class="home">
           <h2>Andrew El-Masry</h2>
-        </div>
-
+        </div><!--end of home-->
         <div class="tagline">
           <quote class="quote">"When you code, know that you are solving real-life problems"</quote>
           <p class="author">-Tim Whitacre</p>
-        </div>
-
+        </div><!--end of tagline-->
         <div class="aboutMe">
           <article>
             <p class="para">
@@ -60,45 +60,89 @@
               My name is Andrew El-Masry and I am Front-End Developer and JS Hacker.
               Ever since I was a young lad, I have been facisinated with</p>
           </aritcle>
-        </div>
-
-
+        </div><!--end of about me-->
+      </div><!--end of homeView-->
     </script>
 
     <script type="text/template" id="contactTemp">
-        <form class="contactForm">
-          <h4>Send Me A Message Right Here</h4>
-          <label class="label1">Your Name:</label>
-          <input type="text" class="nameVal" placeholder="Your Name">
-          <label class="label2">Email: </label>
-          <input type="text" class="emailVal" placeholder="Your E-mail">
-          <label class="label3">Subject:</label>
-          <input type="text" class="subVal" placeholder="Subject">
-          <label class="label4">Your Message:</label>
-          <textarea class="messVal" type="text" placeholder="Your Message Here"></textarea>
-          <button class="submit">Submit</button> <button class="clear">Clear</button>
-          <div class="errorSubmit"></div>
-        </form>
-
-        <div class="messSent"><h1>Thank You, I will get back to you shortly</h1></div>
-        <div class="footer">You can also find me here:</div>
-        <div class="snFrame"><a href= "https://plus.google.com/103677934450919339935/posts" title = "Link to google+"><img class="ftImg" src="images/google+.png"></a></div>
-        <div class="snFrame"><a href= "https://github.com/elmasrya" title = "Link to my github page"><img class="snImg" src="images/github.png"></a></div>
-        <div class="snFrame"><a href= "https://www.linkedin.com/profile/view?id=177789539&trk=spm_pic" title = "This is my Linkedin"><img class="snImg" src="images/linkedin.png"></a></div>
-        <div class="snFrame"><a href= "http://www.meetup.com/members/176761532" title = "meetup"><img class="snImg" src="images/meetup.png"></a></div>
-        <div class="snFrame"><a href= "http://codepen.io/aelmary/" title = "Link to my codepen"><img class="ftImg" src="images/codepen.png"></a></div>
-        <div class="snFrame"><a href= "http://stackoverflow.com/users/4339993/andrew-el-masry" title = "Link to stackoverflow"><img class="snImg" src="images/stackoverflow.png"></a></div>
-        <div class="snFrame"><a href= "https://twitter.com/ael_masry" title = "Link to my twitter"><img class="snImg" src="images/twitter.png"></a></div>
-        <div class="snFrame"><a href= "https://www.youtube.com/channel/UCMd00CVDcwdG-IWPnESwctw" title = "Link to my youtube channel"><img class="snImg" src="images/youtube.png"></a></div>
-        <div class="snFrame"><a href= "https://www.facebook.com/andrew.elmasry.73" title = "Link to my facebook profile"><img class="snImg" src="images/facebook.png"></a></div>
+      <div class="contactView">
+        <div class="contactMe">
+          <form class="contactForm">
+            <h4>Send Me A Message Right Here</h4>
+            <label class="label1">Your Name:</label>
+            <input type="text" class="nameVal" placeholder="Your Name">
+            <label class="label2">Email: </label>
+            <input type="text" class="emailVal" placeholder="Your E-mail">
+            <label class="label3">Subject:</label>
+            <input type="text" class="subVal" placeholder="Subject">
+            <label class="label4">Your Message:</label>
+            <textarea class="messVal" type="text" placeholder="Your Message Here"></textarea>
+            <button class="submit">Submit</button> <button class="clear">Clear</button>
+            <div class="errorSubmit"></div>
+          </form>
+          <div class="messSent"><h1>Thank You, I will get back to you shortly</h1></div>
+        </div><!--end of contact me-->
+        <div class="socialNetwork">
+          <div class="snFrame"><a href= "https://plus.google.com/103677934450919339935/posts" title = "Link to google+"><img class="snImg" src="images/google+.png"></a></div>
+          <div class="snFrame"><a href= "https://github.com/elmasrya" title = "Link to my github page"><img class="snImg" src="images/github.png"></a></div>
+          <div class="snFrame"><a href= "https://www.linkedin.com/profile/view?id=177789539&trk=spm_pic" title = "This is my Linkedin"><img class="snImg" src="images/linkedin.png"></a></div>
+          <div class="snFrame"><a href= "http://www.meetup.com/members/176761532" title = "meetup"><img class="snImg" src="images/meetup.png"></a></div>
+          <div class="snFrame"><a href= "http://codepen.io/aelmary/" title = "Link to my codepen"><img class="snImg" src="images/codepen.png"></a></div>
+          <div class="snFrame"><a href= "http://stackoverflow.com/users/4339993/andrew-el-masry" title = "Link to stackoverflow"><img class="snImg" src="images/stackoverflow.png"></a></div>
+          <div class="snFrame"><a href= "https://twitter.com/ael_masry" title = "Link to my twitter"><img class="snImg" src="images/twitter.png"></a></div>
+          <div class="snFrame"><a href= "https://www.youtube.com/channel/UCMd00CVDcwdG-IWPnESwctw" title = "Link to my youtube channel"><img class="snImg" src="images/youtube.png"></a></div>
+          <div class="snFrame"><a href= "https://www.facebook.com/andrew.elmasry.73" title = "Link to my facebook profile"><img class="snImg" src="images/facebook.png"></a></div>
+        </div><!--end of social network-->
+      </div><!--end of contactView-->
     </script>
 
     <script type="text/template" id="projectsTemp">
-      <h2>Projects Temp</h2>
+      <div class"projectView">
+        <h1>Projects Temp</h1>
+        <div class="book"><h2>Book</h2></div>
+        <div class="game"><h2>Game</h2></div>
+        <div class="bricks"><h2>Bricks</h2></div>
+        <div class="wilma"><h2>Wilma</h2></div>
+        <div class="blog"><h2>Blog</h2></div>
+        <div class="spiked"><h2>Spiked</h2></div>
+        <div class="surf"><h2>Surf</h2></div>
+      </div>
+    </script>
+
+    <script type="text/template" id="bookTemp">
+      <h2>Book Temp</h2>
+      <div class="slider"></div>
+    </script>
+
+    <script type="text/template" id="gameTemp">
+      <h2>Game Temp</h2>
+    </script>
+
+    <script type="text/template" id="bricksTemp">
+      <h2>Bricks Temp</h2>
+    </script>
+
+    <script type="text/template" id="wilmaTemp">
+      <h2>Wilma Temp</h2>
+    </script>
+
+    <script type="text/template" id="blogTemp">
+      <h2>Blog Temp</h2>
+    </script>
+
+    <script type="text/template" id="spikedTemp">
+      <h2>Spiked Temp</h2>
+    </script>
+
+
+    <script type="text/template" id="surfTemp">
+      <h2>Surf Temp</h2>
     </script>
 
     <script type="text/template" id="footerTemp">
-    <h2>FOOTER</h2>
+      <div class="footerView">
+        <h2>Footer</h2>
+      </div>
     </script>
 
 

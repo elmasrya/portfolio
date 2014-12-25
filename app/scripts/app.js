@@ -1,4 +1,7 @@
-Parse.initialize("2fJtmGo25VhG6f8veV632mmw2tYDFXaHeL3QQZ5x", "bzcKJOZdwXHnIrNwOrYROW13PNiGPyQlZXNKnDFX");
+var appId = "pusDm6j1oV9U3Im5Yj0tFBozS982NcJmqHT4hm5R";
+var jsId = "ZbnPUnuT6K0AMc8NjMzNWeFe4JhUjT2lybR0GewJ"
+
+Parse.initialize(appId, jsId);
 
 
 (function () {

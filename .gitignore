@@ -1,9 +1,0 @@
-.DS_Store
-bower_components
-.sass-cache
-.tmp
-app/MyCloudCode
-node_modules
-test/bower_components
-app/.DS_Store
-.idea/*

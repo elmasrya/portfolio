@@ -1,0 +1,152 @@
+// Bourbon & Neat
+@import 'bower_components/bourbon/dist/bourbon';
+@import 'bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+
+
+.navView{
+
+  @include outer-container;
+  border:solid;
+
+  .navImg{
+    @include span-columns(12);
+  }
+
+  .navBox{
+    @include span-columns(4);
+    border:solid;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+  }
+
+  .navBox:hover{
+    cursor: hand;
+    cursor: pointer;
+    background-color:black;
+    border-color:black;
+    color:white;
+  }
+
+}
+
+/*----------------------------------------------------*/
+
+.homeView{
+  @include outer-container;
+  border:solid;
+
+  /*.......home styling.......*/
+
+  .home{
+    @include span-columns(12);
+    border:solid;
+    text-align:center;
+  }
+
+  .tagline{
+    @include span-columns(6);
+    @include shift(3);
+    border:solid;
+    text-align:center;
+  }
+
+  .aboutMe{
+    // border:solid;
+    @include span-columns(4);
+    @include shift(1);
+    padding-top:20px;
+    .para{
+      line-height: 1.5;
+      text-indent: 2em;
+      text-align:justify;
+      margin:0;
+    }
+  }
+}
+
+/*----------------------------------------------------*/
+
+.contactView{
+  @include outer-container;
+  border:solid;
+  .contactMe{
+    border:solid;
+    @include span-columns(12);
+    .contactForm{
+      @include span-columns(5);
+      @include shift(1);
+      label{
+        display:block;
+        margin-bottom:7.5px;
+      }
+      input{
+        padding:5px;
+        margin-bottom:20px;
+      }
+      textarea{
+        width:300px;
+        height:300px;
+        padding:5px;
+        margin-bottom:20px;
+      }
+    }/*end of contact form*/
+  }/*end of contact me */
+
+
+  .snFrame{
+    @include span-columns(4);
+    @include omega();
+    border:solid;
+    text-align:center;
+  }
+
+  .snImg{
+    margin-bottom:60px;
+    height:100px;
+    width:100px;
+    opacity: 0.8;
+    border-radius:10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
+    color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+  }
+
+  .snImg:hover{
+    cursor: hand;
+    cursor: pointer;
+    opacity: 1; /*Reflection*/
+    -webkit-box-reflect:
+    below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+    /*Glow*/ -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  }
+
+}
+
+
+/*----------------------------------------------------*/
+.projectView{
+  @include outer-container;
+  border:solid;
+
+  .sec{
+    @include span-columns(12);
+    border:solid;
+    }
+
+}
+/*----------------------------------------------------*/
+.footerView{
+  @include outer-container;
+  background-color:gray;
+}

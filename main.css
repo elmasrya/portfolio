@@ -1,3 +1,198 @@
-body{
-  background-color:red;
-}
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  background-color: #f1f1f1; }
+
+.navView {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid; }
+  .navView:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .navView .navImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .navView .navImg:last-child {
+      margin-right: 0; }
+  .navView .navBox {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    border: solid;
+    text-decoration: none;
+    color: black;
+    text-align: center; }
+    .navView .navBox:last-child {
+      margin-right: 0; }
+  .navView .navBox:hover {
+    cursor: hand;
+    cursor: pointer;
+    background-color: black;
+    border-color: black;
+    color: white; }
+
+/*----------------------------------------------------*/
+.homeView {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  /*.......home styling.......*/ }
+  .homeView:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .homeView .home {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    border: solid;
+    text-align: center; }
+    .homeView .home:last-child {
+      margin-right: 0; }
+  .homeView .tagline {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    border: solid;
+    text-align: center; }
+    .homeView .tagline:last-child {
+      margin-right: 0; }
+  .homeView .aboutMe {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 8.5298%;
+    padding-top: 20px; }
+    .homeView .aboutMe:last-child {
+      margin-right: 0; }
+    .homeView .aboutMe .para {
+      line-height: 1.5;
+      text-indent: 2em;
+      text-align: justify;
+      margin: 0; }
+
+/*----------------------------------------------------*/
+.contactView {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  /*end of contact me */ }
+  .contactView:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .contactView .contactMe {
+    border: solid;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    /*end of contact form*/ }
+    .contactView .contactMe:last-child {
+      margin-right: 0; }
+    .contactView .contactMe .contactForm {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 8.5298%; }
+      .contactView .contactMe .contactForm:last-child {
+        margin-right: 0; }
+      .contactView .contactMe .contactForm label {
+        display: block;
+        margin-bottom: 7.5px; }
+      .contactView .contactMe .contactForm input {
+        padding: 5px;
+        margin-bottom: 20px; }
+      .contactView .contactMe .contactForm textarea {
+        width: 300px;
+        height: 300px;
+        padding: 5px;
+        margin-bottom: 20px; }
+  .contactView .snFrame {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-right: 0;
+    border: solid;
+    text-align: center; }
+    .contactView .snFrame:last-child {
+      margin-right: 0; }
+  .contactView .snImg {
+    margin-bottom: 60px;
+    height: 100px;
+    width: 100px;
+    opacity: 0.8;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.1))); }
+  .contactView .snImg:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: 1;
+    /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.4)));
+    /*Glow*/
+    -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); }
+
+/*----------------------------------------------------*/
+.projectView {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid; }
+  .projectView:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .projectView .sec {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    border: solid; }
+    .projectView .sec:last-child {
+      margin-right: 0; }
+
+/*----------------------------------------------------*/
+.footerView {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gray; }
+  .footerView:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/*# sourceMappingURL=main.css.map */

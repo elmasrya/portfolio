@@ -185,6 +185,71 @@ body {
       margin-right: 0; }
 
 /*----------------------------------------------------*/
+.bookView {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  text-align: center; }
+  .bookView:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .bookView .bookHeading {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .bookView .bookHeading:last-child {
+      margin-right: 0; }
+  .bookView .slider {
+    width: 720px;
+    height: 800px;
+    border: solid;
+    overflow: hidden;
+    background-color: red; }
+    .bookView .slider .slides {
+      display: block;
+      width: 6000px;
+      height: 400px;
+      margin: 0px;
+      padding: 0px; }
+      .bookView .slider .slides .slide {
+        float: left;
+        list-style-type: none;
+        width: 720px;
+        height: 800px; }
+  .bookView .controls {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    border: solid; }
+    .bookView .controls:last-child {
+      margin-right: 0; }
+    .bookView .controls .left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      float: left;
+      border: solid;
+      border-color: blue; }
+      .bookView .controls .left:last-child {
+        margin-right: 0; }
+    .bookView .controls .right {
+      float: right;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      float: right;
+      border: solid;
+      border-color: orange; }
+      .bookView .controls .right:last-child {
+        margin-right: 0; }
+
+/*----------------------------------------------------*/
 .footerView {
   max-width: 68em;
   margin-left: auto;
@@ -194,5 +259,12 @@ body {
     content: "";
     display: table;
     clear: both; }
+  .footerView .footerHeader {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .footerView .footerHeader:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

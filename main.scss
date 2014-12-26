@@ -146,7 +146,61 @@ body {
 
 }
 /*----------------------------------------------------*/
+
+.bookView{
+  @include outer-container;
+  border:solid;
+  text-align:center;
+
+  .bookHeading{
+    @include span-columns(12);
+    }
+
+  .slider{
+    width:720px;
+    height:800px;
+    border:solid;
+    overflow:hidden;
+    background-color:red;
+    .slides{
+      display:block;
+      width:6000px;
+      height:400px;
+      margin:0px;
+      padding:0px;
+      .slide{
+        float:left;
+        list-style-type:none;
+        width:720px;
+        height:800px;
+      }
+    }
+  }
+
+  .controls{
+    @include span-columns(12);
+    border:solid;
+    .left{
+      @include span-columns(6);
+      float:left;
+      border:solid;
+      border-color:blue;
+    }
+    .right{
+      float:right;
+      @include span-columns(6);
+      float:right;
+      border:solid;
+      border-color:orange;
+    }
+  }
+
+}
+/*----------------------------------------------------*/
 .footerView{
   @include outer-container;
   background-color:gray;
+  .footerHeader{
+    @include span-columns(12);
+  }
 }

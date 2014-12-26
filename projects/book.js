@@ -27,7 +27,7 @@
     left : function () {
       count--;
       console.log(count);
-        $('.slides').animate({'margin-left':'+=720'}, 1000);
+        $('.slides').animate({'margin-left':'+=720'});
         if (count===1) {
           $('.left').css("display","none");
         };
@@ -41,7 +41,7 @@
       console.log(count);
       if (count > 1){
         $('.left').css("display","inline");
-        $('.slides').animate({'margin-left':'-=720'}, 1000);
+        $('.slides').animate({'margin-left':'-=720'});
       };
       if (count===6) {
         $('.right').css("display","none")

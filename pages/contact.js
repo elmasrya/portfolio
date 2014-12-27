@@ -8,7 +8,6 @@
     template        : _.template($('#contactTemp').html()),
 
     events: {
-      'click .submit'     :   'submit',
       'click .clear'      :   'clear',
     },
 
@@ -20,76 +19,75 @@
 
     render  : function () {
       this.$el.html(this.template);
+      this.sendMessage();
 
 
     },
 
-    submit    : function (e) {
-      e.preventDefault();
+    sendMessage    : function () {
 
-      if($('.nameVal').val() === ""){
-        $('.label1').empty();
-        $('.label1').html('Please put a name').css("color","red");
+      $('.submit').on('click', function(){
 
-        $('.label2').empty();
-        $('.label2').html('Your E-mail:').css("color","black");
-        $('.label3').empty();
-        $('.label3').html('Subject:').css("color","black");
-        $('.label4').empty();
-        $('.label4').html('Message:').css("color","black");
+        if($('.nameVal').val() === ""){
+          $('.label1').empty();
+          $('.label1').html('Please put a name').css("color","red");
 
-        $('.errorSubmit').empty();
-        $('.errorSubmit').html('You are missing a name').css("color","red");
-        console.log('working');
-      }
-      else if($('.emailVal').val() === ""){
-        $('.label2').empty();
-        $('.label2').html('Please put a valid e-mail').css("color","red");
+          $('.label2').empty();
+          $('.label2').html('Your E-mail:').css("color","black");
+          $('.label3').empty();
+          $('.label3').html('Subject:').css("color","black");
+          $('.label4').empty();
+          $('.label4').html('Message:').css("color","black");
 
-        $('.label1').empty();
-        $('.label1').html('You Name').css("color","black");
-        $('.label3').empty();
-        $('.label3').html('Subject:').css("color","black");
-        $('.label4').empty();
-        $('.label4').html('Message:').css("color","black");
+          $('.errorSubmit').empty();
+          $('.errorSubmit').html('You are missing a name').css("color","red");
+          console.log('working');
+        }
+        else if($('.emailVal').val() === ""){
+          $('.label2').empty();
+          $('.label2').html('Please put a valid e-mail').css("color","red");
 
-        $('.errorSubmit').empty();
-        $('.errorSubmit').html('You are missing a valid e-mail').css("color","red");
-        console.log('working');
-      }
-      else if($('.subVal').val() === ""){
-        $('.label3').empty();
-        $('.label3').html('Please put a subject').css("color","red");
+          $('.label1').empty();
+          $('.label1').html('You Name').css("color","black");
+          $('.label3').empty();
+          $('.label3').html('Subject:').css("color","black");
+          $('.label4').empty();
+          $('.label4').html('Message:').css("color","black");
 
-        $('.label1').empty();
-        $('.label1').html('You Name').css("color","black");
-        $('.label2').empty();
-        $('.label2').html('Your E-mail:').css("color","black");
-        $('.label4').empty();
-        $('.label4').html('Message:').css("color","black");
+          $('.errorSubmit').empty();
+          $('.errorSubmit').html('You are missing a valid e-mail').css("color","red");
+          console.log('working');
+        }
+        else if($('.subVal').val() === ""){
+          $('.label3').empty();
+          $('.label3').html('Please put a subject').css("color","red");
 
-        $('.errorSubmit').empty();
-        $('.errorSubmit').html('You are missing a subject').css("color","red");
-      }
+          $('.label1').empty();
+          $('.label1').html('You Name').css("color","black");
+          $('.label2').empty();
+          $('.label2').html('Your E-mail:').css("color","black");
+          $('.label4').empty();
+          $('.label4').html('Message:').css("color","black");
 
-      else if($('.messVal').val() === ""){
-        $('.label4').empty();
-        $('.label4').html('Please put a message').css("color","red");
+          $('.errorSubmit').empty();
+          $('.errorSubmit').html('You are missing a subject').css("color","red");
+        }
+
+        else if($('.messVal').val() === ""){
+          $('.label4').empty();
+          $('.label4').html('Please put a message').css("color","red");
 
 
-        $('.label1').empty();
-        $('.label1').html('You Name').css("color","black");
-        $('.label2').empty();
-        $('.label2').html('Your E-mail:').css("color","black");
-        $('.label3').empty();
-        $('.label3').html('Message:').css("color","black");
+          $('.label1').empty();
+          $('.label1').html('You Name').css("color","black");
+          $('.label2').empty();
+          $('.label2').html('Your E-mail:').css("color","black");
+          $('.label3').empty();
+          $('.label3').html('Message:').css("color","black");
 
-        $('.errorSubmit').empty();
-        $('.errorSubmit').html('You are missing a message').css("color","red");
-      }
-
-      else{
-
+          $('.errorSubmit').empty();
+          $('.errorSubmit').html('You are missing a message').css("color","red");
+        } else {
 
         var message = new App.Models.Message({
           name: $('.nameVal').val(),
@@ -104,15 +102,16 @@
             $( '.contactForm' ).fadeOut(500);
             $( '.messSent').delay(500);
             $( ".messSent" ).fadeIn( 500);
+
           },
 
-          error:function(e) {
+          error:function() {
             alert('There was an error in sending the message');
           }
 
         });
-
-      }/*end of else*/
+      };/*end of else*/
+      }); /*end of submit*/
 
     },
 

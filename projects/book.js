@@ -8,8 +8,7 @@
     template        : _.template($('#bookTemp').html()),
 
     events: {
-        'click .left' : 'left',
-        'click .right': 'right',
+
     },
 
     initialize   : function () {
@@ -21,23 +20,29 @@
 
     render  : function () {
       this.$el.html(this.template);
+      this.leftS();
+      this.rightS();
+
 
     },
 
-    left : function (e) {
-      e.preventDefault();
-      count--;
-      console.log(count);
-        $('.slides').animate({'margin-left':'+=720'});
-        if (count===1) {
-          $('.left').css("display","none");
-        };
-        if (count === 5) {
-          $('.right').css("display","inline");
-        }
+    leftS : function () {
+      $('.left').on('click', function(e) {
+        e.preventDefault();
+        count--;
+        console.log(count);
+          $('.slides').animate({'margin-left':'+=720'});
+          if (count===1) {
+            $('.left').css("display","none");
+          };
+          if (count === 5) {
+            $('.right').css("display","inline");
+          }
+      });
     },
 
-    right : function (e) {
+    rightS : function () {
+      $('.right').on('click', function(e) {
       e.preventDefault();
       count++;
       console.log(count);
@@ -48,7 +53,8 @@
       if (count===6) {
         $('.right').css("display","none")
       }
-    }
+    });
+  }
 
   });
 

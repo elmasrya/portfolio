@@ -24,7 +24,8 @@
 
     },
 
-    left : function () {
+    left : function (e) {
+      e.preventDefault();
       count--;
       console.log(count);
         $('.slides').animate({'margin-left':'+=720'});
@@ -36,16 +37,17 @@
         }
     },
 
-    right : function () {
+    right : function (e) {
+      e.preventDefault();
       count++;
       console.log(count);
       if (count > 1){
         $('.left').css("display","inline");
         $('.slides').animate({'margin-left':'-=720'});
-      };
+      }
       if (count===6) {
         $('.right').css("display","none")
-      };
+      }
     }
 
   });

@@ -111,9 +111,9 @@
 
         });
       };/*end of else*/
-      }); /*end of submit*/
+    }); /*end of jquery submit*/
 
-    },
+    }/*end of send message*/,
 
     clear     : function (e) {
       e.preventDefault();

@@ -1,6 +1,9 @@
 (function(){
-  var count =1;
+
+  var count=1;
+
   App.Views.Book = Parse.View.extend({
+
 
     el                : '#middle',
 
@@ -14,6 +17,7 @@
     initialize   : function () {
       this.render();
       $('.left').css("display","none");
+      count=1
       console.log(count);
 
     },

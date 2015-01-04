@@ -190,7 +190,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: solid;
-  text-align: center; }
+  text-align: center;
+  /*end of arrow frame*/ }
   .bookView:after {
     content: "";
     display: table;
@@ -202,52 +203,57 @@ body {
     width: 100%; }
     .bookView .bookHeading:last-child {
       margin-right: 0; }
-  .bookView .slider {
-    width: 720px;
-    height: 800px;
+  .bookView .arrFrame {
     border: solid;
-    overflow: hidden;
-    background-color: red; }
-    .bookView .slider .slides {
-      display: block;
-      width: 6000px;
-      height: 400px;
-      margin: 0px;
-      padding: 0px; }
-      .bookView .slider .slides .slide {
-        float: left;
-        list-style-type: none;
-        width: 720px;
-        height: 800px; }
-  .bookView .controls {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    border: solid; }
-    .bookView .controls:last-child {
+    width: 10.43705%; }
+    .bookView .arrFrame:last-child {
       margin-right: 0; }
-    .bookView .controls .left {
+    .bookView .arrFrame .left {
+      border: solid;
+      border-color: blue;
+      opacity: 0.4;
+      filter: alpha(opacity=40); }
+    .bookView .arrFrame .left:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100); }
+    .bookView .arrFrame .right {
+      border: solid;
+      border-color: orange;
+      opacity: 0.4;
+      filter: alpha(opacity=40); }
+    .bookView .arrFrame .right:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100); }
+  .bookView .slider {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    display: inline-block;
+    border: solid;
+    background-color: red; }
+    .bookView .slider:last-child {
+      margin-right: 0; }
+    .bookView .slider .slides {
+      display: inline-block;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
-      float: left;
-      border: solid;
-      border-color: blue; }
-      .bookView .controls .left:last-child {
+      width: 100%;
+      margin: 0px;
+      padding: 0px; }
+      .bookView .slider .slides:last-child {
         margin-right: 0; }
-    .bookView .controls .right {
-      float: right;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      float: right;
-      border: solid;
-      border-color: orange; }
-      .bookView .controls .right:last-child {
-        margin-right: 0; }
+      .bookView .slider .slides .slide {
+        display: inline;
+        list-style-type: none;
+        width: 100%; }
+        .bookView .slider .slides .slide .pic {
+          display: inline;
+          width: 100%; }
 
 /*----------------------------------------------------*/
 .footerView {

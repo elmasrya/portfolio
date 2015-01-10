@@ -185,75 +185,45 @@ body {
       margin-right: 0; }
 
 /*----------------------------------------------------*/
-.bookView {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid;
-  text-align: center;
-  /*end of arrow frame*/ }
-  .bookView:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .bookView .bookHeading {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .bookView .bookHeading:last-child {
-      margin-right: 0; }
-  .bookView .arrFrame {
-    border: solid;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 10.43705%; }
-    .bookView .arrFrame:last-child {
-      margin-right: 0; }
-    .bookView .arrFrame .left {
-      border: solid;
-      border-color: blue;
-      opacity: 0.4;
-      filter: alpha(opacity=40); }
-    .bookView .arrFrame .left:hover {
-      opacity: 1.0;
-      filter: alpha(opacity=100); }
-    .bookView .arrFrame .right {
-      border: solid;
-      border-color: orange;
-      opacity: 0.4;
-      filter: alpha(opacity=40); }
-    .bookView .arrFrame .right:hover {
-      opacity: 1.0;
-      filter: alpha(opacity=100); }
-  .bookView .slider {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    display: inline-block;
-    border: solid;
-    background-color: red; }
-    .bookView .slider:last-child {
-      margin-right: 0; }
-    .bookView .slider .slides {
-      display: inline-block;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin: 0px;
-      padding: 0px; }
-      .bookView .slider .slides:last-child {
-        margin-right: 0; }
-      .bookView .slider .slides .slide {
-        display: inline;
-        list-style-type: none;
-        width: 100%; }
-        .bookView .slider .slides .slide .pic {
-          display: inline;
-          width: 100%; }
+.bookView #slider3 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 auto; }
+.bookView #slider3-pager a {
+  display: inline; }
+.bookView #slider3-pager img {
+  float: left;
+  height: 100px; }
+.bookView #slider3-pager .rslides_here a {
+  background: transparent;
+  box-shadow: 0 0 0 2px #600; }
+.bookView #slider3-pager a {
+  padding: 0; }
+.bookView .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+.bookView .rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+.bookView .rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+.bookView .rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }
 
 /*----------------------------------------------------*/
 .footerView {

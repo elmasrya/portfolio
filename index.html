@@ -130,20 +130,21 @@
 
 
   <script type="text/template" id="bookTemp">
-    <div class="bookView">
-      <h2 class="bookHeading">BookSlayer</h2>
-      <div class="arrFrame"><img class="left" src="images/andrew/aleft.png"></div>
-      <div class="slider">
-        <ul class="slides">
-          <li class="slide"><img class="slide1 pic" src="images/projectPics/slayer/slayer1.png"></li>
-          <li class="slide"><img class="slide2 pic" src="images/projectPics/slayer/slayer2.png"></li>
-          <li class="slide"><img class="slide3 pic" src="images/projectPics/slayer/slayer3.png"></li>
-          <li class="slide"><img class="slide4 pic" src="images/projectPics/slayer/slayer4.png"></li>
-          <li class="slide"><img class="slide5 pic" src="images/projectPics/slayer/slayer5.png"></li>
-          <li class="slide"><img class="slide6 pic" src="images/projectPics/slayer/slayer6.png"></li>
-        </ul>
-      </div>
-      <div class="arrFrame"><img class="right" src="images/andrew/aright.png"></div>
+  <!-- Slideshow 3 -->
+  <div class="bookView">
+  <ul class="rslides" id="slider3">
+    <li><img src="images/projectPics/slayer/slayer1.png" alt=""></li>
+    <li><img src="images/projectPics/slayer/slayer2.png" alt=""></li>
+    <li><img src="images/projectPics/slayer/slayer3.png" alt=""></li>
+  </ul>
+
+  <!-- Slideshow 3 Pager -->
+  <ul id="slider3-pager">
+    <li><a href="#"><img src="images/projectPics/slayer/slayer1.png" alt=""></a></li>
+    <li><a href="#"><img src="images/projectPics/slayer/slayer2.png" alt=""></a></li>
+    <li><a href="#"><img src="images/projectPics/slayer/slayer3.png" alt=""></a></li>
+  </ul>
+
     </div>
   </script>
 
@@ -216,6 +217,7 @@
 
   <!--.......Bower Components......-->
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/responsiveslides.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/parse/parse.min.js"></script>
   <!--.......Bower Components......-->

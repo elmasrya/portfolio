@@ -1,4 +1,4 @@
-(function(){
+(function () {
 
   App.Views.Contact = Parse.View.extend({
 

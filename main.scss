@@ -155,8 +155,12 @@ body {
     margin: 0 auto;
   }
 
+  #slider3-pager li {
+    list-style:none;
+    display:inline;
+  }
   #slider3-pager a {
-    display: inline;
+    display: inline-block;
   }
 
   #slider3-pager img {
@@ -167,7 +171,7 @@ body {
 
   #slider3-pager .rslides_here a {
     background: transparent;
-    box-shadow: 0 0 0 2px #600;
+    box-shadow: 0 0 0 2px #660;
   }
 
   #slider3-pager a {
@@ -200,7 +204,6 @@ body {
 
   .rslides img {
     display: block;
-    height: auto;
     float: left;
     width: 100%;
     border: 0;

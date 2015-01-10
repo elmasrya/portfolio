@@ -190,14 +190,17 @@ body {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   margin: 0 auto; }
-.bookView #slider3-pager a {
+.bookView #slider3-pager li {
+  list-style: none;
   display: inline; }
+.bookView #slider3-pager a {
+  display: inline-block; }
 .bookView #slider3-pager img {
   float: left;
   height: 100px; }
 .bookView #slider3-pager .rslides_here a {
   background: transparent;
-  box-shadow: 0 0 0 2px #600; }
+  box-shadow: 0 0 0 2px #660; }
 .bookView #slider3-pager a {
   padding: 0; }
 .bookView .rslides {
@@ -220,7 +223,6 @@ body {
   float: left; }
 .bookView .rslides img {
   display: block;
-  height: auto;
   float: left;
   width: 100%;
   border: 0; }

@@ -116,7 +116,19 @@ $mainF: 'Kreon', serif;
         margin-top:10px;
         @include span-columns(12);
       }
+
     }/*end of contact form*/
+    .errorSent{
+      @include shift(1);
+      @include span-columns(10);
+
+      .sorry{
+        color:red;
+      }
+      .errorHome{
+
+      }
+    }
   }/*end of contact me */
 
   .socialNetwork{

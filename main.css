@@ -171,6 +171,16 @@ html {
         width: 100%; }
         .contactView .contactMe .contactForm .errorSubmit:last-child {
           margin-right: 0; }
+    .contactView .contactMe .errorSent {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .contactView .contactMe .errorSent:last-child {
+        margin-right: 0; }
+      .contactView .contactMe .errorSent .sorry {
+        color: red; }
   .contactView .socialNetwork {
     float: left;
     display: block;

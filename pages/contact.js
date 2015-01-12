@@ -14,6 +14,8 @@
     initialize   : function () {
       this.render();
       $('.messSent').css("display","none");
+      $('.errorSent').css("display","none");
+
 
     },
 
@@ -106,7 +108,9 @@
           },
 
           error:function() {
-            alert('There was an error in sending the message');
+            $( '.errorSent').delay(500);
+            $( ".errorSent" ).fadeIn( 500);
+
           }
 
         });

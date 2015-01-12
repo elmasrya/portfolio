@@ -26,8 +26,6 @@ $mainF: 'Kreon', serif;
     text-align:center;
     margin-top:20px;
     margin-bottom:20px;
-    font-family:$mainF;
-    border-radius:10px;
 
   }
 
@@ -118,6 +116,10 @@ $mainF: 'Kreon', serif;
       }
 
     }/*end of contact form*/
+    .messSent{
+      @include shift(1);
+      @include span-columns(10);
+    }
     .errorSent{
       @include shift(1);
       @include span-columns(10);

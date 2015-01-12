@@ -38,9 +38,7 @@ html {
     text-decoration: none;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: "Kreon", serif;
-    border-radius: 10px; }
+    margin-bottom: 20px; }
     .navView .navBox:last-child {
       margin-right: 0; }
   .navView .navBox:hover {
@@ -171,6 +169,14 @@ html {
         width: 100%; }
         .contactView .contactMe .contactForm .errorSubmit:last-child {
           margin-right: 0; }
+    .contactView .contactMe .messSent {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .contactView .contactMe .messSent:last-child {
+        margin-right: 0; }
     .contactView .contactMe .errorSent {
       margin-left: 8.5298%;
       float: left;

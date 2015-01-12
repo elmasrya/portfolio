@@ -103,14 +103,13 @@
             console.log("Success");
             $( '.contactForm' ).fadeOut(500);
             $( '.messSent').delay(500);
-            $( ".messSent" ).fadeIn( 500);
+            $( '.messSent' ).fadeIn( 500);
 
           },
 
           error:function() {
             $( '.errorSent').delay(500);
-            $( ".errorSent" ).fadeIn( 500);
-
+            $( '.errorSent' ).fadeIn( 500);
           }
 
         });

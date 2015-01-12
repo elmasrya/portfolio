@@ -301,17 +301,17 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: gray; }
+  background-color: gray;
+  height: 100px; }
   .footerView:after {
     content: "";
     display: table;
     clear: both; }
-  .footerView .footerHeader {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .footerView .footerHeader:last-child {
-      margin-right: 0; }
+  .footerView .footerLinks {
+    padding-top: 30px; }
+    .footerView .footerLinks .flinks:hover {
+      cursor: hand;
+      cursor: pointer;
+      color: red; }
 
 /*# sourceMappingURL=main.css.map */

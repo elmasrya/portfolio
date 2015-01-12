@@ -262,7 +262,13 @@ $mainF: 'Kreon', serif;
 .footerView{
   @include outer-container;
   background-color:gray;
-  .footerHeader{
-    @include span-columns(12);
+  height:100px;
+  .footerLinks{
+    padding-top:30px;
+    .flinks:hover{
+      cursor: hand;
+      cursor: pointer;
+      color:red;
+    }
   }
 }

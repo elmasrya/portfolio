@@ -10,7 +10,8 @@
     events: {
       'click .home'        :   'gohome',
       'click .projects'    :   'goprojects',
-      'click .contact'     :   'gocontact'
+      'click .contact'     :   'gocontact',
+      'click .navImg'      :   'gogallery'
     },
 
     initialize   : function () {
@@ -37,7 +38,13 @@
     gocontact : function () {
       App.router.navigate('#/contact', {trigger: true});
       new App.Views.Contact();
+    },
+
+    gogallery : function () {
+      App.router.navigate('#/gallery', {trigger: true});
+      new App.Views.Gallery();
     }
+
 
   });
 

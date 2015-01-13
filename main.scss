@@ -13,9 +13,14 @@ $mainF: 'Kreon', serif;
 
   @include outer-container;
 
+
   .navImg{
     border:solid;
     @include span-columns(12);
+  }
+  .navImg:hover{
+    cursor: hand;
+    cursor: pointer;
   }
 
   .navBox{
@@ -78,6 +83,9 @@ $mainF: 'Kreon', serif;
 
 .contactView{
   @include outer-container;
+  .emailPhone{
+    @include span-columns(12);
+  }
   .contactMe{
     @include span-columns(12);
     .contactForm{
@@ -261,9 +269,10 @@ $mainF: 'Kreon', serif;
 /*----------------------------------------------------*/
 .footerView{
   @include outer-container;
-  background-color:gray;
+  background-color:black;
   height:100px;
   .footerLinks{
+    color:white;
     padding-top:30px;
     .flinks:hover{
       cursor: hand;

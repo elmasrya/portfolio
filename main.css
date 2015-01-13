@@ -28,6 +28,9 @@ html {
     width: 100%; }
     .navView .navImg:last-child {
       margin-right: 0; }
+  .navView .navImg:hover {
+    cursor: hand;
+    cursor: pointer; }
   .navView .navBox {
     margin-left: 2.55894%;
     float: left;
@@ -104,6 +107,13 @@ html {
     content: "";
     display: table;
     clear: both; }
+  .contactView .emailPhone {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .contactView .emailPhone:last-child {
+      margin-right: 0; }
   .contactView .contactMe {
     float: left;
     display: block;
@@ -301,13 +311,14 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: gray;
+  background-color: black;
   height: 100px; }
   .footerView:after {
     content: "";
     display: table;
     clear: both; }
   .footerView .footerLinks {
+    color: white;
     padding-top: 30px; }
     .footerView .footerLinks .flinks:hover {
       cursor: hand;

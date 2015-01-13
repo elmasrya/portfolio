@@ -12,6 +12,7 @@
       ''                  : 'home',
       'projects'          : 'projects',
       'contact'           : 'contact',
+      'gallery'           : 'gallery',
       'book'              : 'book',
       'game'              : 'game',
       'bricks'            : 'bricks',
@@ -34,6 +35,10 @@
     contact: function () {
       $('.messSent').css("display","none");
       new App.Views.Contact();
+    },
+
+    gallery: function () {
+      new App.Views.Gallery();
     },
 
     book: function () {

@@ -324,5 +324,8 @@ html {
       cursor: hand;
       cursor: pointer;
       color: red; }
+  .footerView .footInfo {
+    display: block;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

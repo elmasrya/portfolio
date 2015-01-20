@@ -94,8 +94,8 @@ $mainF: 'Kreon', serif;
       border-radius:20px;
       background-image:url("images/andrew/contactBackground.jpg");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
-      @include span-columns(11);
+      background-size: 875px 100%;
+      @include span-columns(9.5);
       @include shift(1);
       .instruction{
         color:white;

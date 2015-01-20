@@ -123,14 +123,24 @@ html {
     .contactView .contactMe:last-child {
       margin-right: 0; }
     .contactView .contactMe .contactForm {
+      border: solid;
+      border-radius: 20px;
+      background-image: url("images/andrew/contactBackground.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 40.29137%;
+      width: 91.4702%;
       margin-left: 8.5298%; }
       .contactView .contactMe .contactForm:last-child {
         margin-right: 0; }
+      .contactView .contactMe .contactForm .instruction {
+        color: white;
+        margin-left: 8.5298%; }
       .contactView .contactMe .contactForm label {
+        color: white;
+        margin-left: 8.5298%;
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -140,10 +150,17 @@ html {
         .contactView .contactMe .contactForm label:last-child {
           margin-right: 0; }
       .contactView .contactMe .contactForm input {
+        margin-left: 8.5298%;
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 65.88078%;
+        width: 31.76157%;
+        filter: alpha(opacity=60);
+        /* IE */
+        -moz-opacity: 0.6;
+        /* Mozilla */
+        opacity: 0.6;
+        /* CSS3 */
         min-width: 200px;
         border-color: black;
         padding: 5px;
@@ -152,12 +169,20 @@ html {
         .contactView .contactMe .contactForm input:last-child {
           margin-right: 0; }
       .contactView .contactMe .contactForm textarea {
+        margin-left: 8.5298%;
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
+        width: 65.88078%;
+        filter: alpha(opacity=60);
+        /* IE */
+        -moz-opacity: 0.6;
+        /* Mozilla */
+        opacity: 0.6;
+        /* CSS3 */
         min-width: 270px;
         padding: 5px;
+        border: solid;
         border-width: 2px;
         margin-bottom: 20px;
         border-radius: 3px;
@@ -165,18 +190,21 @@ html {
         .contactView .contactMe .contactForm textarea:last-child {
           margin-right: 0; }
       .contactView .contactMe .contactForm .bFrame {
+        margin-left: 8.5298%;
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 91.4702%; }
         .contactView .contactMe .contactForm .bFrame:last-child {
           margin-right: 0; }
       .contactView .contactMe .contactForm .errorSubmit {
         margin-top: 10px;
+        margin-left: 8.5298%;
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 91.4702%;
+        margin-top: 10px; }
         .contactView .contactMe .contactForm .errorSubmit:last-child {
           margin-right: 0; }
     .contactView .contactMe .messSent {

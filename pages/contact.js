@@ -35,11 +35,11 @@
           $('.label1').html('Please put a name').css("color","red");
 
           $('.label2').empty();
-          $('.label2').html('Your E-mail:').css("color","black");
+          $('.label2').html('Your E-mail:').css("color","white");
           $('.label3').empty();
-          $('.label3').html('Subject:').css("color","black");
+          $('.label3').html('Subject:').css("color","white");
           $('.label4').empty();
-          $('.label4').html('Message:').css("color","black");
+          $('.label4').html('Message:').css("color","white");
 
           $('.errorSubmit').empty();
           $('.errorSubmit').html('You are missing a name').css("color","red");
@@ -50,11 +50,11 @@
           $('.label2').html('Please put a valid e-mail').css("color","red");
 
           $('.label1').empty();
-          $('.label1').html('You Name').css("color","black");
+          $('.label1').html('Your Name').css("color","white");
           $('.label3').empty();
-          $('.label3').html('Subject:').css("color","black");
+          $('.label3').html('Subject:').css("color","white");
           $('.label4').empty();
-          $('.label4').html('Message:').css("color","black");
+          $('.label4').html('Message:').css("color","white");
 
           $('.errorSubmit').empty();
           $('.errorSubmit').html('You are missing a valid e-mail').css("color","red");
@@ -65,11 +65,11 @@
           $('.label3').html('Please put a subject').css("color","red");
 
           $('.label1').empty();
-          $('.label1').html('You Name').css("color","black");
+          $('.label1').html('Your Name').css("color","white");
           $('.label2').empty();
-          $('.label2').html('Your E-mail:').css("color","black");
+          $('.label2').html('Your E-mail:').css("color","white");
           $('.label4').empty();
-          $('.label4').html('Message:').css("color","black");
+          $('.label4').html('Message:').css("color","white");
 
           $('.errorSubmit').empty();
           $('.errorSubmit').html('You are missing a subject').css("color","red");
@@ -81,11 +81,11 @@
 
 
           $('.label1').empty();
-          $('.label1').html('You Name').css("color","black");
+          $('.label1').html('Your Name').css("color","white");
           $('.label2').empty();
-          $('.label2').html('Your E-mail:').css("color","black");
+          $('.label2').html('Your E-mail:').css("color","white");
           $('.label3').empty();
-          $('.label3').html('Message:').css("color","black");
+          $('.label3').html('Message:').css("color","white");
 
           $('.errorSubmit').empty();
           $('.errorSubmit').html('You are missing a message').css("color","red");

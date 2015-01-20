@@ -69,7 +69,7 @@ html {
     width: 100%;
     border: solid;
     text-align: center;
-    background: gray; }
+    background: #f9f412; }
     .homeView .home:last-child {
       margin-right: 0; }
   .homeView .tagline {

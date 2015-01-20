@@ -68,7 +68,8 @@ html {
     margin-right: 2.35765%;
     width: 100%;
     border: solid;
-    text-align: center; }
+    text-align: center;
+    background: gray; }
     .homeView .home:last-child {
       margin-right: 0; }
   .homeView .tagline {

@@ -84,9 +84,16 @@ $mainF: 'Kreon', serif;
 
 .contactView{
   @include outer-container;
-  .emailPhone{
-    @include span-columns(12);
+  .topContact{
+    text-align:center;
+    @include shift(.3);
+    @include span-columns(3.6);
+    border:solid;
+    .conLabel{
+      display:block;
+    }
   }
+
   .contactMe{
     @include span-columns(12);
     .contactForm{
@@ -143,7 +150,6 @@ $mainF: 'Kreon', serif;
         margin-top:10px;
         @include shift(1);
         @include span-columns(11);
-        margin-top:10px;
       }
 
     }/*end of contact form*/
@@ -167,9 +173,11 @@ $mainF: 'Kreon', serif;
   .socialNetwork{
     @include span-columns(12);
     .findMe{
-      margin-top:50px;
+      @include span-columns(10);
       @include shift(1);
-
+      text-align:center;
+      margin-top:40px;
+      text-decoration:underline;
     }
     .snFrame{
       @include span-columns(4);

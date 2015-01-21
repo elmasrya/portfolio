@@ -108,13 +108,18 @@ html {
     content: "";
     display: table;
     clear: both; }
-  .contactView .emailPhone {
+  .contactView .topContact {
+    text-align: center;
+    margin-left: 2.55894%;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
-    .contactView .emailPhone:last-child {
+    width: 28.34964%;
+    border: solid; }
+    .contactView .topContact:last-child {
       margin-right: 0; }
+    .contactView .topContact .conLabel {
+      display: block; }
   .contactView .contactMe {
     float: left;
     display: block;
@@ -205,8 +210,7 @@ html {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 91.4702%;
-        margin-top: 10px; }
+        width: 91.4702%; }
         .contactView .contactMe .contactForm .errorSubmit:last-child {
           margin-right: 0; }
     .contactView .contactMe .messSent {
@@ -235,8 +239,16 @@ html {
     .contactView .socialNetwork:last-child {
       margin-right: 0; }
     .contactView .socialNetwork .findMe {
-      margin-top: 50px;
-      margin-left: 8.5298%; }
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%;
+      text-align: center;
+      margin-top: 40px;
+      text-decoration: underline; }
+      .contactView .socialNetwork .findMe:last-child {
+        margin-right: 0; }
     .contactView .socialNetwork .snFrame {
       float: left;
       display: block;

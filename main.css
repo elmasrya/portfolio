@@ -12,6 +12,11 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+#container {
+  background-image: url("images/andrew/back3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
 .navView {
   max-width: 68em;
   margin-left: auto;
@@ -41,7 +46,8 @@ html {
     text-decoration: none;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-radius: 7px; }
     .navView .navBox:last-child {
       margin-right: 0; }
   .navView .navBox:hover {
@@ -114,12 +120,13 @@ html {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 28.34964%;
-    border: solid; }
+    width: 28.34964%; }
     .contactView .topContact:last-child {
       margin-right: 0; }
     .contactView .topContact .conLabel {
       display: block; }
+  .contactView .topContact:hover {
+    color: #FF0000; }
   .contactView .contactMe {
     float: left;
     display: block;
@@ -134,6 +141,7 @@ html {
       background-image: url("images/andrew/contactBackground.jpg");
       background-repeat: no-repeat;
       background-size: 875px 100%;
+      margin-top: 20px;
       float: left;
       display: block;
       margin-right: 2.35765%;

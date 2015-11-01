@@ -7,8 +7,14 @@
 
 $gray1:rgb(128, 128, 128);
 $mainF: 'Kreon', serif;
+$red:#FF0000;
 
 
+#container{
+  background-image: url("images/andrew/back3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .navView{
 
   @include outer-container;
@@ -31,6 +37,7 @@ $mainF: 'Kreon', serif;
     text-align:center;
     margin-top:20px;
     margin-bottom:20px;
+    border-radius: 7px;
 
   }
 
@@ -88,10 +95,12 @@ $mainF: 'Kreon', serif;
     text-align:center;
     @include shift(.3);
     @include span-columns(3.6);
-    border:solid;
     .conLabel{
       display:block;
     }
+  }
+  .topContact:hover{
+    color:$red;
   }
 
   .contactMe{
@@ -102,6 +111,7 @@ $mainF: 'Kreon', serif;
       background-image:url("images/andrew/contactBackground.jpg");
       background-repeat: no-repeat;
       background-size: 875px 100%;
+      margin-top: 20px;
       @include span-columns(9.5);
       @include shift(1);
       .instruction{

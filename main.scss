@@ -1,328 +1,40 @@
-// Bourbon & Neat
-@import 'bower_components/bourbon/dist/bourbon';
-@import 'bower_components/neat/app/assets/stylesheets/neat';
-
-// Custom Styles
-
-
 $gray1:rgb(128, 128, 128);
 $mainF: 'Kreon', serif;
 $red:#FF0000;
 
-
-#container{
-  background-image: url("images/andrew/back3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.navView{
-
-  @include outer-container;
-
-
-  .navImg{
-    border:solid;
-    @include span-columns(12);
-  }
-  .navImg:hover{
-    cursor: hand;
-    cursor: pointer;
-  }
-
-  .navBox{
-    @include shift(.3);
-    @include span-columns(3.6);
-    background-color:$gray1;
-    text-decoration:none;
-    text-align:center;
-    margin-top:20px;
-    margin-bottom:20px;
-    border-radius: 7px;
-
-  }
-
-  .navBox:hover{
-    cursor: hand;
-    cursor: pointer;
-    background-color:black;
-    border-color:black;
-    color:white;
-  }
-
+//Necessary for setting dimensions to percentages
+html, body { 
+	height: 100%; 
+	width: 100%; 
+	margin: 0; 
 }
 
-/*----------------------------------------------------*/
+#container {
+	height: 100%; 
+	width: 100%; 
 
-.homeView{
-  @include outer-container;
-  border:solid;
+	#body {
+		float:right;
+	}
 
-  /*.......home styling.......*/
+	.content{
+		height: 33%;
+		border: solid;
 
-  .home{
-    @include span-columns(12);
-    border:solid;
-    text-align:center;
-    background:rgb(249,244,18);
-  }
+	}
 
-  .tagline{
-    @include span-columns(6);
-    @include shift(3);
-    border:solid;
-    text-align:center;
-  }
+	#top {
+		overflow: hidden;
+	
+		.signature{
+			height: 100%;
+			margin-left: 25%;
+		}
+	}
 
-  .aboutMe{
-    // border:solid;
-    @include span-columns(4);
-    @include shift(1);
-    padding-top:20px;
-    .para{
-      line-height: 1.5;
-      text-indent: 2em;
-      text-align:justify;
-      margin:0;
-    }
-  }
-}
-
-/*----------------------------------------------------*/
-
-.contactView{
-  @include outer-container;
-  .topContact{
-    text-align:center;
-    @include shift(.3);
-    @include span-columns(3.6);
-    .conLabel{
-      display:block;
-    }
-  }
-  .topContact:hover{
-    color:$red;
-  }
-
-  .contactMe{
-    @include span-columns(12);
-    .contactForm{
-      border:solid;
-      border-radius:20px;
-      background-image:url("images/andrew/contactBackground.jpg");
-      background-repeat: no-repeat;
-      background-size: 875px 100%;
-      margin-top: 20px;
-      @include span-columns(9.5);
-      @include shift(1);
-      .instruction{
-        color:white;
-        @include shift(1);
-      }
-      label{
-        color:white;
-        @include shift(1);
-        @include span-columns(10);
-        font-weight:bold;
-        display:block;
-        margin-bottom:7.5px;
-      }
-      input{
-        @include shift(1);
-        @include span-columns(4);
-        filter:alpha(opacity=60); /* IE */
-        -moz-opacity:0.6; /* Mozilla */
-        opacity: 0.6; /* CSS3 */
-        min-width:200px;
-        border-color:black;
-        padding:5px;
-        margin-bottom:20px;
-        border-radius:3px;
-      }
-      textarea{
-        @include shift(1);
-        @include span-columns(8);
-        filter:alpha(opacity=70); /* IE */
-        -moz-opacity:0.7; /* Mozilla */
-        opacity: 0.7; /* CSS3 */
-        min-width:270px;
-        padding:5px;
-        border:solid;
-        border-width:2px;
-        margin-bottom:20px;
-        border-radius:3px;
-        height:300px;
-      }
-      .bFrame{
-        @include shift(1);
-        @include span-columns(11);
-      }
-      .errorSubmit{
-        margin-top:10px;
-        @include shift(1);
-        @include span-columns(11);
-      }
-
-    }/*end of contact form*/
-    .messSent{
-      @include shift(1);
-      @include span-columns(10);
-    }
-    .errorSent{
-      @include shift(1);
-      @include span-columns(10);
-
-      .sorry{
-        color:red;
-      }
-      .errorHome{
-
-      }
-    }
-  }/*end of contact me */
-
-  .socialNetwork{
-    @include span-columns(12);
-    .findMe{
-      @include span-columns(10);
-      @include shift(1);
-      text-align:center;
-      margin-top:40px;
-      text-decoration:underline;
-    }
-    .snFrame{
-      @include span-columns(4);
-      @include omega();
-      margin-top:20px;
-      text-align:center;
-    }
-
-    .snImg{
-      margin-bottom:60px;
-      height:100px;
-      width:100px;
-      opacity: 0.8;
-      border-radius:10px;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease; /*Reflection*/
-      -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
-      color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
-      border:solid;
-      border-color:black;
-      border-width:3px;
-    }
-
-
-    .snImg:hover{
-      cursor: hand;
-      cursor: pointer;
-      opacity: 1; /*Reflection*/
-      -webkit-box-reflect:
-      below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
-      /*Glow*/ -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-      -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-      box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-    }
-  }/*end of social network*/
-}/*end of contact view*/
-
-
-/*----------------------------------------------------*/
-.projectView{
-  @include outer-container;
-
-  .sec{
-    @include span-columns(12);
-    border:solid;
-    }
-
-}
-/*----------------------------------------------------*/
-
-.projectView{
-  #slider3 {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    margin: 0 auto;
-  }
-
-  #slider3-pager{
-    text-align:center;
-  }
-
-  #slider3-pager li {
-    list-style:none;
-    display:inline;
-  }
-  #slider3-pager a {
-    display: inline-block;
-  }
-
-  #slider3-pager img {
-    float: left;
-    height:100px;
-
-  }
-
-  #slider3-pager .rslides_here a {
-    background: transparent;
-    box-shadow: 0 0 0 2px #660;
-  }
-
-  #slider3-pager a {
-    padding: 0;
-  }
-
-  .rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-
-  .rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
-  }
-
-  .rslides img {
-    display: block;
-    float: left;
-    width: 100%;
-    border: 0;
-  }
-
-
-}
-/*----------------------------------------------------*/
-.footerView{
-  @include outer-container;
-  background-color:black;
-  height:100px;
-  .footerLinks{
-    color:white;
-    padding-top:30px;
-    .flinks:hover{
-      cursor: hand;
-      cursor: pointer;
-      color:red;
-    }
-  }
-  .footInfo{
-    display:block;
-    color:white;
-  }
+	#sidebar {
+		height: 100%;
+		width: 25%;
+		float:left;
+	}
 }

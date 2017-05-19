@@ -3,38 +3,38 @@ $mainF: 'Kreon', serif;
 $red:#FF0000;
 
 //Necessary for setting dimensions to percentages
-html, body { 
-	height: 100%; 
-	width: 100%; 
-	margin: 0; 
-}
+// html, body { 
+// 	height: 100%; 
+// 	width: 100%; 
+// 	margin: 0; 
+// }
 
-#container {
-	height: 100%; 
-	width: 100%; 
+// #container {
+// 	height: 100%; 
+// 	width: 100%; 
 
-	#body {
-		float:right;
-	}
+// 	#body {
+// 		float:right;
+// 	}
 
-	.content{
-		height: 33%;
-		border: solid;
+// 	.content{
+// 		height: 33%;
+// 		border: solid;
 
-	}
+// 	}
 
-	#top {
-		overflow: hidden;
+// 	#top {
+// 		overflow: hidden;
 	
-		.signature{
-			height: 100%;
-			margin-left: 25%;
-		}
-	}
+// 		.signature{
+// 			height: 100%;
+// 			margin-left: 25%;
+// 		}
+// 	}
 
-	#sidebar {
-		height: 100%;
-		width: 25%;
-		float:left;
-	}
-}
+// 	#sidebar {
+// 		height: 100%;
+// 		width: 25%;
+// 		float:left;
+// 	}
+// }

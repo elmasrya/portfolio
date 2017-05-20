@@ -1,40 +1,86 @@
-$gray1:rgb(128, 128, 128);
-$mainF: 'Kreon', serif;
-$red:#FF0000;
+// Bourbon & Neat
+@import 'bower_components/bourbon/dist/bourbon';
+@import 'bower_components/neat/app/assets/stylesheets/neat';
 
-//Necessary for setting dimensions to percentages
-// html, body { 
-// 	height: 100%; 
-// 	width: 100%; 
-// 	margin: 0; 
-// }
+.header{
+  width: 70%;
+  margin-top:40px;
+  margin-left:10%;
+  margin-right:10%;
+  text-align: justify;
+}
 
-// #container {
-// 	height: 100%; 
-// 	width: 100%; 
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
 
-// 	#body {
-// 		float:right;
-// 	}
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
 
-// 	.content{
-// 		height: 33%;
-// 		border: solid;
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+ 
+blockquote cite:before {
+  content: "\2014 \2009";
+}
 
-// 	}
+.socialNetwork{
+  @include span-columns(12);
+  .snFrame{
+    @include span-columns(4);
+    @include omega();
+    margin-top:20px;
+    text-align:center;
+  }
 
-// 	#top {
-// 		overflow: hidden;
-	
-// 		.signature{
-// 			height: 100%;
-// 			margin-left: 25%;
-// 		}
-// 	}
+.snImg{
+  margin-bottom:60px;
+  height:100px;
+  width:100px;
+  opacity: 0.8;
+  border-radius:10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
+  color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+  border:solid;
+  border-color:black;
+  border-width:3px;
+}
 
-// 	#sidebar {
-// 		height: 100%;
-// 		width: 25%;
-// 		float:left;
-// 	}
-// }
+
+  .snImg:hover{
+    cursor: hand;
+    cursor: pointer;
+    opacity: 1; /*Reflection*/
+    -webkit-box-reflect:
+    below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+    /*Glow*/ -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  }
+}
+
+#footer{
+  background-color: #7a7a7a;
+}

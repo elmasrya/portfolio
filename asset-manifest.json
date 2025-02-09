@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.f61fb3df.js",
+    "main.css": "/static/css/main.181b42b8.css",
+    "main.js": "/static/js/main.b7f44b8e.js",
     "static/js/488.7df9bb25.chunk.js": "/static/js/488.7df9bb25.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/fortnite_background.png": "/static/media/fortnite_background.0d9a92cfe35cc895d85d.png",
+    "static/media/family.png": "/static/media/family.fc43ae2a24b7557c1e10.png",
+    "static/media/hobbies.png": "/static/media/hobbies.e3163b646079b155e1fc.png",
+    "static/media/career.png": "/static/media/career.55fef26c5467ebf8e68e.png",
+    "static/media/hello.png": "/static/media/hello.71989b0e096d5c0c2edd.png",
+    "static/media/fortnite.ttf": "/static/media/fortnite.1b37763f88ebb7c1e63a.ttf",
     "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.f61fb3df.js.map": "/static/js/main.f61fb3df.js.map",
+    "main.181b42b8.css.map": "/static/css/main.181b42b8.css.map",
+    "main.b7f44b8e.js.map": "/static/js/main.b7f44b8e.js.map",
     "488.7df9bb25.chunk.js.map": "/static/js/488.7df9bb25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.f61fb3df.js"
+    "static/css/main.181b42b8.css",
+    "static/js/main.b7f44b8e.js"
   ]
 }

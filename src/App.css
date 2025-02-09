@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Fortnite';
+  src: url('./fonts/fortnite.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.me-select{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url("./images/fortnite_background.png");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.avatar-container {
+  display: grid;
+  margin-right: 5%;
+  margin-left: 12%;
+  grid-template-areas: "career hello hobbies family"; /* Define grid areas */
+}
+
+.image-container {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  min-width: 240px;
+}
+
+.image-label {
+  font-family: 'Fortnite', serif;
+  font-size: 24px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.image-container:nth-child(1) { /* career */
+  grid-area: career;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image-container:nth-child(2) { /* hello */
+  grid-area: hello;
+  margin-top: 10%;
+}
+
+.image-container:nth-child(3) { /* hobbies */
+  grid-area: hobbies;
+}
+
+.image-container:nth-child(4) { /* family */
+  grid-area: family;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 750px)  {
+  .home-container {
   }
-  to {
-    transform: rotate(360deg);
+
+  .avatar-container {
+  }
+}
+
+@media screen and (max-width: 1000px)  {
+  .avatar-container {
+    margin-top: 30%;
+  }
+
+}
+
+@media screen and (max-height: 750px)  {
+  .avatar-container {
+    margin-top: 21%;
+  }
+}
+
+@media screen and (min-height: 751px) {
+  .avatar-container {
+    margin-top: 19%;
   }
 }

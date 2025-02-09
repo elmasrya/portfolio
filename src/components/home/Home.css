@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Fortnite';
+    src: url('../../fonts/fortnite.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    background-image: url("../../images/fortnite_background.png");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: grid;
+    grid-template-areas: "career hello hobbies family"; /* Define grid areas */
+}
+
+.image-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.me-select{
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-label {
+    font-family: 'Fortnite', serif;
+    font-size: 34px;
+    color: white;
+}
+
+.image-container:nth-child(1) { /* career */
+    grid-area: career;
+}
+
+.image-container:nth-child(2) { /* hello */
+    grid-area: hello;
+}
+
+.image-container:nth-child(3) { /* hobbies */
+    grid-area: hobbies;
+}
+
+.image-container:nth-child(4) { /* family */
+    grid-area: family;
+}
+
+@media screen and (max-width: 750px)  {
+    .home-container {
+        display: block;
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .image-container{
+        margin-top: 0px;
+        width: 100%;
+        align-items: start;
+        text-align: left;
+        display: inline-block;
+        border: #383838 solid 1px;
+    }
+
+    .me-select {
+        width: 40%;
+    }
+
+    .image-label {
+        height: 125px;
+        margin-top: 0;
+        margin-left: 10px;
+        padding-top: 75px;
+        float: left;
+        width: 30%;
+    }
+}
+
+@media screen and (max-height: 600px)  {
+    .image-container {
+        margin-top: 0;
+    }
+}

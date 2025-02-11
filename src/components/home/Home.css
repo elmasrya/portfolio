@@ -6,55 +6,67 @@
 }
 
 .home-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: scroll;
-    position: relative;
+    object-fit: cover;
+    z-index: 1;
+    overflow: hidden;
     background-image: url("../../images/fortnite_background.png");
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    display: grid;
-    grid-template-areas: "career hello hobbies family"; /* Define grid areas */
 }
 
 .image-container {
+    position: absolute;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 300px;
 }
 
-.me-select{
-    width: 100%;
-    max-width: 400px;
+.me-select {
+    position: absolute;
+    z-index: 2; /* Places these images above the logo */
+    /* Adjust the following properties to position each image as needed */
+    top: 10%;
+    left: 10%;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
 }
 
 .image-label {
     font-family: 'Fortnite', serif;
     font-size: 34px;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .image-container:nth-child(1) { /* career */
-    grid-area: career;
+    top: 30%;
+    left: 30%;
 }
 
 .image-container:nth-child(2) { /* hello */
-    grid-area: hello;
+    top: 100%;
+    left: 100%;
 }
 
 .image-container:nth-child(3) { /* hobbies */
-    grid-area: hobbies;
+    top: 100%;
+    left: 100%;
 }
 
 .image-container:nth-child(4) { /* family */
-    grid-area: family;
+    top: 100%;
+    left: 100%;
 }
 
-@media screen and (max-width: 750px)  {
+/*@media screen and (max-width: 750px)  {
     .home-container {
         display: block;
         overflow: scroll;
@@ -82,10 +94,10 @@
         float: left;
         width: 30%;
     }
-}
+}*/
 
-@media screen and (max-height: 600px)  {
+/*@media screen and (max-height: 600px)  {
     .image-container {
         margin-top: 0;
     }
-}
+}*/
